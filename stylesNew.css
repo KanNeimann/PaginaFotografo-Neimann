@@ -1,0 +1,119 @@
+/* Generales */
+:root {
+  --color-primario: #000000;
+  --color-secundario: #87cefa;
+  --color-terciario: #ffffff;
+  --color-cuaternario: #4f6d7a;
+  --color-quinternario: #4a6fa5;
+  --color-verde: rgb(63, 151, 63);
+  --color-rojo: rgb(247, 51, 51);
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+th {
+  color: var(--color-quinternario);
+}
+textarea {
+  min-height: 25vh !important;
+}
+figcaption {
+  color: var(--color-cuaternario);
+}
+
+/* Nav */
+.navbar {
+  background-color: black;
+}
+.titulo,
+#logo,
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--color-secundario);
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--color-quinternario);
+}
+/* Banner */
+.header-row {
+  max-height: 50vh;
+}
+.banner {
+  background-image: url(img/montania.jpg);
+  width: 100vw;
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+#logo-banner {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  display: block;
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 0;
+}
+#logo-banner:hover {
+  color: black !important;
+}
+@media (min-width: 576px) {
+  #logo-banner {
+    right: 3%;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+}
+@media (min-width: 992px) {
+  #logo-banner {
+    right: 5%;
+    font-size: 5rem;
+    font-weight: 800;
+  }
+}
+/* Contact Page */
+.boton {
+  border: solid var(--color-secundario) 3px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Teko", sans-serif;
+}
+.send {
+  color: var(--color-secundario);
+  background-color: var(--color-terciario);
+}
+.send:hover {
+  animation: enviar 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes enviar {
+  0% {
+  }
+  100% {
+    color: var(--color-terciario);
+    background-color: var(--color-verde);
+    border-color: var(--color-verde);
+  }
+}
+.reset {
+  color: var(--color-terciario);
+  background-color: var(--color-secundario);
+}
+.reset:hover {
+  animation: resetear 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes resetear {
+  0% {
+  }
+  100% {
+    color: var(--color-terciario);
+    background-color: var(--color-rojo);
+    border-color: var(--color-rojo);
+  }
+}
