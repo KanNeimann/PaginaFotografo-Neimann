@@ -16,7 +16,7 @@ a {
   text-decoration: none;
 }
 th {
-  color: var(--color-quinternario);
+  color: var(--color-secundario);
 }
 textarea {
   min-height: 25vh !important;
