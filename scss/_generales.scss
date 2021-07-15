@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  color: $color-primario;
+  text-decoration: none;
+}
+th {
+  color: $color-quinternario;
+}
+textarea {
+  min-height: 25vh !important;
+}
+figcaption {
+  color: $color-cuaternario;
+}
+
+/* Nav */
+.navbar {
+  background-color: $color-primario;
+}
+.titulo,
+#logo,
+.navbar-dark .navbar-nav .nav-link {
+  color: $color-secundario;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: $color-quinternario;
+}
+/* Banner */
+.header-row {
+  max-height: 50vh;
+}
+.banner {
+  background-image: url(../img/montania.jpg);
+  width: 100vw;
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+#logo-banner {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  display: block;
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 0;
+}
+#logo-banner:hover {
+  color: $color-primario !important;
+}
+@media (min-width: 576px) {
+  #logo-banner {
+    right: 3%;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+}
+@media (min-width: 992px) {
+  #logo-banner {
+    right: 5%;
+    font-size: 5rem;
+    font-weight: 800;
+  }
+}

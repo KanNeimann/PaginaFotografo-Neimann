@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+th {
+  color: #4a6fa5;
+}
+
+textarea {
+  min-height: 25vh !important;
+}
+
+figcaption {
+  color: #4f6d7a;
+}
+
+/* Nav */
+.navbar {
+  background-color: #000000;
+}
+
+.titulo,
+#logo,
+.navbar-dark .navbar-nav .nav-link {
+  color: #87cefa;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #4a6fa5;
+}
+
+/* Banner */
+.header-row {
+  max-height: 50vh;
+}
+
+.banner {
+  background-image: url(../img/montania.jpg);
+  width: 100vw;
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#logo-banner {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  display: block;
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 0;
+}
+
+#logo-banner:hover {
+  color: #000000 !important;
+}
+
+@media (min-width: 576px) {
+  #logo-banner {
+    right: 3%;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+}
+@media (min-width: 992px) {
+  #logo-banner {
+    right: 5%;
+    font-size: 5rem;
+    font-weight: 800;
+  }
+}
+.boton {
+  border: solid #87cefa 3px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.send {
+  color: #87cefa;
+  background-color: #ffffff;
+}
+
+.send:hover {
+  animation: enviar 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes enviar {
+  0% {
+    color: #87cefa;
+  }
+  100% {
+    color: #ffffff;
+    background-color: #3f973f;
+    border-color: #3f973f;
+  }
+}
+.reset {
+  color: #ffffff;
+  background-color: #87cefa;
+}
+
+.reset:hover {
+  animation: resetear 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes resetear {
+  0% {
+    color: #ffffff;
+  }
+  100% {
+    color: #ffffff;
+    background-color: #f73333;
+    border-color: #f73333;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,42 @@
+.boton {
+  border: solid $color-secundario 3px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.send {
+  color: $color-secundario;
+  background-color: $color-terciario;
+}
+.send:hover {
+  animation: enviar 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes enviar {
+  0% {
+    color: $color-secundario;
+  }
+  100% {
+    color: $color-terciario;
+    background-color: $color-verde;
+    border-color: $color-verde;
+  }
+}
+.reset {
+  color: $color-terciario;
+  background-color: $color-secundario;
+}
+.reset:hover {
+  animation: resetear 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes resetear {
+  0% {
+    color: $color-terciario;
+  }
+  100% {
+    color: $color-terciario;
+    background-color: $color-rojo;
+    border-color: $color-rojo;
+  }
+}
