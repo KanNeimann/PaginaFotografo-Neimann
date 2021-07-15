@@ -1,15 +1,15 @@
 {
-  "name": "entrega-4",
+  "name": "paginafotografo-neimann",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "sass --watch scss/styles.scss css/styles.css"
   },
-  "author": "kan",
+  "author": "Neimann Kenneth",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.0.2"
   },
-  "description": ""
+  "description": "Proyecto realizado para curso desarrollo web."
 }
