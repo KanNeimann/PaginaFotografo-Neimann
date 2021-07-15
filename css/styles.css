@@ -29,7 +29,8 @@ figcaption {
 .navbar-dark .navbar-nav .nav-link {
   color: #87cefa;
 }
-
+.titulo:hover,
+#logo:hover,
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #4a6fa5;
 }
@@ -41,14 +42,14 @@ figcaption {
 
 .banner {
   background-image: url(../img/montania.jpg);
-  width: 100vw;
   height: 40vh;
+  width: 100vw;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
 }
-
-#logo-banner {
+.banner__logo {
   position: absolute;
   top: 10%;
   right: 5%;
@@ -57,39 +58,44 @@ figcaption {
   font-size: 3rem;
   margin: 0;
 }
-
-#logo-banner:hover {
+.banner__logo:hover {
   color: #000000 !important;
 }
-
 @media (min-width: 576px) {
-  #logo-banner {
+  .banner__logo {
     right: 3%;
     font-size: 4rem;
     font-weight: 700;
   }
 }
 @media (min-width: 992px) {
-  #logo-banner {
+  .banner__logo {
     right: 5%;
     font-size: 5rem;
     font-weight: 800;
   }
 }
+
 .boton {
   border: solid #87cefa 3px;
   border-radius: 10px;
   font-size: 1.5rem;
   font-weight: 700;
 }
-
-.send {
+.boton--send {
   color: #87cefa;
   background-color: #ffffff;
 }
-
-.send:hover {
+.boton--send:hover {
   animation: enviar 1s;
+  animation-fill-mode: forwards;
+}
+.boton--reset {
+  color: #ffffff;
+  background-color: #87cefa;
+}
+.boton--reset:hover {
+  animation: resetear 1s;
   animation-fill-mode: forwards;
 }
 
@@ -103,16 +109,6 @@ figcaption {
     border-color: #3f973f;
   }
 }
-.reset {
-  color: #ffffff;
-  background-color: #87cefa;
-}
-
-.reset:hover {
-  animation: resetear 1s;
-  animation-fill-mode: forwards;
-}
-
 @keyframes resetear {
   0% {
     color: #ffffff;

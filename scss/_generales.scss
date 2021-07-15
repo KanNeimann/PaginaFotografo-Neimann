@@ -23,9 +23,9 @@ figcaption {
 #logo,
 .navbar-dark .navbar-nav .nav-link {
   color: $color-secundario;
-}
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: $color-quinternario;
+  &:hover {
+    color: $color-quinternario;
+  }
 }
 /* Banner */
 .header-row {
@@ -33,35 +33,32 @@ figcaption {
 }
 .banner {
   background-image: url(../img/montania.jpg);
-  width: 100vw;
   height: 40vh;
+  width: 100vw;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
-}
-#logo-banner {
-  position: absolute;
-  top: 10%;
-  right: 5%;
-  display: block;
-  font-weight: 600;
-  font-size: 3rem;
-  margin: 0;
-}
-#logo-banner:hover {
-  color: $color-primario !important;
-}
-@media (min-width: 576px) {
-  #logo-banner {
-    right: 3%;
-    font-size: 4rem;
-    font-weight: 700;
-  }
-}
-@media (min-width: 992px) {
-  #logo-banner {
+  &__logo {
+    position: absolute;
+    top: 10%;
     right: 5%;
-    font-size: 5rem;
-    font-weight: 800;
+    display: block;
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0;
+    &:hover {
+      color: $color-primario !important;
+    }
+    @media (min-width: 576px) {
+      right: 3%;
+      font-size: 4rem;
+      font-weight: 700;
+    }
+    @media (min-width: 992px) {
+      right: 5%;
+      font-size: 5rem;
+      font-weight: 800;
+    }
   }
 }

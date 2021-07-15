@@ -3,14 +3,22 @@
   border-radius: 10px;
   font-size: 1.5rem;
   font-weight: 700;
-}
-.send {
-  color: $color-secundario;
-  background-color: $color-terciario;
-}
-.send:hover {
-  animation: enviar 1s;
-  animation-fill-mode: forwards;
+  &--send {
+    color: $color-secundario;
+    background-color: $color-terciario;
+    &:hover {
+      animation: enviar 1s;
+      animation-fill-mode: forwards;
+    }
+  }
+  &--reset {
+    color: $color-terciario;
+    background-color: $color-secundario;
+    &:hover {
+      animation: resetear 1s;
+      animation-fill-mode: forwards;
+    }
+  }
 }
 @keyframes enviar {
   0% {
@@ -21,14 +29,6 @@
     background-color: $color-verde;
     border-color: $color-verde;
   }
-}
-.reset {
-  color: $color-terciario;
-  background-color: $color-secundario;
-}
-.reset:hover {
-  animation: resetear 1s;
-  animation-fill-mode: forwards;
 }
 @keyframes resetear {
   0% {
