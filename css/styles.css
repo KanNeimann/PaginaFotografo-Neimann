@@ -10772,12 +10772,14 @@ figcaption {
   background-color: #000000;
 }
 
-.titulo,
+.titulo {
+  color: #87cefa;
+}
+
 #logo,
 .navbar-dark .navbar-nav .nav-link {
   color: #87cefa;
 }
-.titulo:hover,
 #logo:hover,
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #4a6fa5;

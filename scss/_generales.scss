@@ -19,7 +19,10 @@ figcaption {
 .navbar {
   background-color: $color-primario;
 }
-.titulo,
+.titulo {
+  color: $color-secundario;
+}
+
 #logo,
 .navbar-dark .navbar-nav .nav-link {
   color: $color-secundario;
