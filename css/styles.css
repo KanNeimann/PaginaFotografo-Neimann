@@ -10826,6 +10826,16 @@ figcaption {
   }
 }
 
+.logo-rsocial {
+  width: 2vh;
+  filter: invert(61%) sepia(12%) saturate(18%) hue-rotate(317deg) brightness(81%) contrast(88%);
+}
+@media (min-width: 576px) {
+  .logo-rsocial {
+    width: 3vh;
+  }
+}
+
 .boton {
   border: solid #87cefa 3px;
   border-radius: 10px;
