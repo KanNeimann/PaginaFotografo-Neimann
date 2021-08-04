@@ -10836,6 +10836,11 @@ figcaption {
   }
 }
 
+.div-banner {
+  overflow: hidden;
+  height: auto;
+}
+
 .boton {
   border: solid #87cefa 3px;
   border-radius: 10px;
